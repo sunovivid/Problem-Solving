@@ -32,9 +32,14 @@ int main()
         }
         for (int i = 0; i < n / 2; i++)
         {
-            pp[i] = {arr[i] + arr[n - i - 1], {arr[i], arr[n - i - 1]}};
+            pp[i] = {arr[i] + arr[n - i - 1], {arr[i] + k, arr[n - i - 1] + 1}};
         }
-        pp.
+        sort(pp, pp + n / 2);
+        int min = 0;
+        for (auto p : pp)
+        {
+            sum = p.first >
+        }
     }
     return 0;
 }
