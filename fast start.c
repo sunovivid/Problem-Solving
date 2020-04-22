@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define MAX
+
 /* 문제 정의
  ->
  */

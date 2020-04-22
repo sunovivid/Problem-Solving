@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <vector>
 
+#define MAX
+
 using namespace std;
 
 /* 문제 정의
@@ -19,3 +21,9 @@ int main()
 
     return 0;
 }
+
+/*legacy
+
+
+
+*/

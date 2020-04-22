@@ -1,4 +1,6 @@
+tempCodeRunnerFile.*
 .vscode
+*.exe
 
 # Created by https://www.gitignore.io/api/c,c++,java,python,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=c,c++,java,python,visualstudiocode
