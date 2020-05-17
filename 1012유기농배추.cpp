@@ -51,7 +51,7 @@ int main()
     while (testcase_num--)
     {
         // cout << "1";
-        ans_count = 0;
+        ans_count = 0;g
         cin >> m >> n >> k;
         for (int i = 0; i < k; i++)
         {

@@ -1,9 +1,6 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <assert.h>
-#include <string.h>
-#include <string>
 
 #define MAX
 
@@ -19,13 +16,8 @@ using namespace std;
 
 int main()
 {
-    ////////////////////input////////////////////
     cin.tie(NULL);
     ios_base::sync_with_stdio(false);
-
-    ///////////////////solution//////////////////
-
-    ////////////////////output///////////////////
 
     return 0;
 }

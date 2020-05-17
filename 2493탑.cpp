@@ -2,6 +2,7 @@
 //문제를 단순하고 간결하게 풀자!!
 //이 문제에서는 index를 저장했으면 복잡하게 풀 필요 없었다!
 
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
