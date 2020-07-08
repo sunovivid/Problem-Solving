@@ -28,7 +28,7 @@ int main()
 {
     cin.tie(NULL);
     ios_base::sync_with_stdio(false);
-    
+
     int r, c;
     char map[MAX][MAX];
     int firemap[MAX][MAX] = {0};

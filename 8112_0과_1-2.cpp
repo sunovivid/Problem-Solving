@@ -6,7 +6,7 @@
 #include <string>
 #include <queue>
 
-#define MAX 100001
+#define MAX 1000010
 
 using namespace std;
 
@@ -33,16 +33,15 @@ bool visited[MAX] = {false,};
 pair<int,bool> parent[MAX];
 
 void printPath(int k) {
-    cout << "printPath";
+    // cout << "printPath " << k << endl;
     if (k == -2)
         return;
     printPath(parent[k].first);
-    cout << (parent[k].second ? '1' : '0') << '\n';
+    cout << (parent[k].second ? '1' : '0');
 }
 
 void solve(int n) {
     memset(visited, false, sizeof(visited));
-    cout << "C" << endl;
     //base case
     if (n==1) {
         cout << '1' << '\n';
@@ -52,27 +51,32 @@ void solve(int n) {
     int k;
     for (int i=0;i<n;i++)
         parent[i].first = -1;
-    cout << "X" << endl;
     
     //bfs
     queue<int> q;
     q.push(1);
     parent[1] = {-2,1};
+    visited[1] = true;
     while (!q.empty()) {
+        //visit
         k = q.front();
         q.pop();
-        // cout << "visit: " << k << endl;
 
         int children[2] = {(k*10) % n, (k*10 + 1) % n};
         bool found = false;
         for (int i=0;i<2;i++) {
             int child = children[i];
+            
+            //goal & visit test
             if (visited[child] || found)
                 continue;
             if (child == 0) {
                 found = true;
+                parent[child] = {k,i};
                 break;
             }
+
+            //expand
             visited[child] = true;
             q.push(child);
             parent[child] = {k,i};
@@ -81,14 +85,15 @@ void solve(int n) {
             break;
     }
     
-    //parent test
-    for (int i=0;i<n;i++) {
-        if (parent[i].first != -1)
-            cout << "i: " << i << ", parent: " << parent[i].first << ", bool: " << parent[i].second << endl;
-    }
+    // //parent test
+    // for (int i=0;i<n;i++) {
+    //     if (parent[i].first != -1)
+    //         cout << "i: " << i << ", parent: " << parent[i].first << ", bool: " << parent[i].second << endl;
+    // }
 
     //print path
-    printPath(k);
+    printPath(0);
+    cout << '\n';
 }
 
 int main()
