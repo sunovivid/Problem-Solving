@@ -1,7 +1,6 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <queue>
 #include <assert.h>
 #include <string.h>
 #include <string>
@@ -28,8 +27,12 @@ int main()
     cin.tie(NULL);
     ios_base::sync_with_stdio(false);
 
+    int n;
+    cin >> n;
     ///////////////////solution//////////////////
-
+    while (n--) {
+        cout << "SKH" << '\n';
+    }
     ////////////////////output///////////////////
 
     return 0;

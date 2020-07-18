@@ -1,4 +1,6 @@
 //55분. 트라이 구현에 오래걸림
+//자료구조 SET 사용하면 바로 풀 수 있음 (중복 입력 무시해서 set 개수 구하면 됨)
+// STL 자료구조들을 더 익혀둬야겠다고 생각
 
 #include <iostream>
 #include <algorithm>

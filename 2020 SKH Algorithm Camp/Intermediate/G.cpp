@@ -1,3 +1,7 @@
+/*
+정해: 2차원 DP[i][j] (i층, 마지막으로 올라온 층 개수가 2^j층) + **세그먼트 트리** (많은 최댓값 쿼리)
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -22,7 +26,7 @@ using namespace std;
         => O(N^2) 시간초과?
 
     쿼리 들어오면 그리디하게 처리
-        
+
 */
 
 /* 시간복잡도

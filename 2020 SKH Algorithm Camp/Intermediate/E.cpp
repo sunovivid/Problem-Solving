@@ -1,3 +1,7 @@
+/*정해: FFT (실수 계산 유의)
+prefix sum 구해서 2ps^3(a)[x] - ps^2(a)[x] = sum{i=0 to x-1} (x-i)^2 * a[i]
+*/
+
 // long long int 안써서 overflow로 감점
 
 #include <iostream>
