@@ -25,6 +25,9 @@ using namespace std;
         for j = 0 to i-1
             dp[i][j][0] = dp[i-1][j][0] + dp[i-1][j][1]
             dp[i][j][1] = dp[i-1][j][0] + dp[i-1][j-1][1]
+
+수정1
+    j = -1 참조하는 버그 수정
 */
 
 /* 시간복잡도
