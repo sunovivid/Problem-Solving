@@ -7,7 +7,7 @@
 
 #define MAX 10010
 #define max(a, b) (a > b ? a : b)
-#define max3(a, b, c) (max(max(a,b),c))
+#define max3(a, b, c) (max(max(a, b), c))
 using namespace std;
 
 /* 문제 정의
@@ -41,16 +41,18 @@ int main()
     long long n, arr[MAX], dp[MAX];
     cin >> n;
     arr[0] = 0;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++)
+    {
         cin >> arr[i];
     }
     ///////////////////solution//////////////////
     dp[0] = 0;
-    for (int i = 1; i <= n; i++) {
-        dp[i] = max3(dp[max(i - 4,0)] + arr[i - 1] + arr[i], dp[max(i - 3,0)] + arr[i - 1] + arr[i], dp[i - 2] + arr[i]);
+    for (int i = 1; i <= n; i++)
+    {
+        dp[i] = max3(dp[max(i - 4, 0)] + arr[i - 1] + arr[i], dp[max(i - 3, 0)] + arr[i - 1] + arr[i], dp[i - 2] + arr[i]);
     }
     ////////////////////output///////////////////
-    cout << max(dp[n], dp[max(n-1,0)]);
+    cout << max(dp[n], dp[max(n - 1, 0)]);
     return 0;
 }
 

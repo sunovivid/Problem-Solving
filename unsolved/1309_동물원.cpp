@@ -52,8 +52,10 @@ int main()
     cin >> n;
     ///////////////////solution//////////////////
     long long dp[2][3] = {1, 1, 1}, cur = 1; // 아무 사자도 배치하지 않는 경우 제외
-    while (--n) {
-        for (int i=0;i<3;i++) {
+    while (--n)
+    {
+        for (int i = 0; i < 3; i++)
+        {
             dp[cur][i] = (i == 0 ? 0 : dp[!cur][0]) + (i == 1 ? 0 : dp[!cur][1]) + dp[!cur][2];
             dp[cur][i] %= 9901;
             // cout << dp[cur][i] << ' ';

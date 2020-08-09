@@ -35,8 +35,7 @@ void treeTraverse(int root) //해당 노드를 root로 가지는 subtree의 리�
         treeTraverse(child);
 }
 
-int main()
-{
+int main() {
     ////////////////////input////////////////////
     cin.tie(NULL);
     ios_base::sync_with_stdio(false);
@@ -56,9 +55,8 @@ int main()
     cin >> deleteNode;
 
     ///////////////////solution//////////////////
-    if (deleteNode == root)
-    {
-        cout << 0;
+    if (deleteNode == root) {
+        cout << 0; 
         return 0;
     }
     parentArr[deleteNode] = -1;
