@@ -5,6 +5,7 @@
 #include <assert.h>
 #include <string.h>
 #include <string>
+#include <tuple>
 
 #define MAX
 
@@ -70,6 +71,7 @@ int classify(int begin, int end)
         }
     if (isCaseMatch)
         return 5;
+    return -1;
 }
 
 int memorize(int begin)
